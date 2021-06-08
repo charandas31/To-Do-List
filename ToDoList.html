@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@700&display=swap" rel="stylesheet">
+    <style>
+    
+        body {
+            background-color: rgb(247, 219, 160);
+            font-family: 'Baloo Tammudu 2', cursive;
+            
+        }
+        
+        h1 {
+            text-align:center; 
+        }
+        
+        input {
+            outline: none;
+        }
+        
+        #taskBox {
+            border-radius: 10px;
+            margin:20px;
+            padding:20px;
+            width:800px;
+            background-color: rgb(248, 52, 38);
+            text-align: left;
+            display: grid;
+            grid-template-columns: 25% 25% 20% 10% 10% 10%;
+            
+        }
+        .completed {
+            background-color: rgb(20, 236, 20) !important;
+        }
+        button {
+            margin:0px 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: black;
+            color:white;
+        }
+        #total {
+            float:right;
+            margin-top:80px;
+            margin-right:10px;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/afe9d36b7f.js" crossorigin="anonymous"></script>
+    <div id="total">Total Task = 0</div>
+    <h1>To Do List App</h1>
+    <center><div>
+        <input type="text" id="task" placeholder="Add Task Here">
+        <button id='btn'>Submit</button>
+    </div></center>
+    <hr>
+    <center><div id="box"></div></center>
+    
+</body>
+</html>
+
+<script src="ToDoList.js"></script>
